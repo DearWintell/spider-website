@@ -1,0 +1,146 @@
+[browser] Uncaught Error: ./components/doc-blocks.tsx:50:7
+Expected corresponding JSX closing tag for <Reveal>
+  48 |         }
+  49 |       })}
+> 50 |     </div>
+     |       ^^^
+  51 |   );
+  52 | }
+  53 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/doc-blocks.tsx
+    ./app/docs/[slug]/page.tsx
+
+
+    at <unknown> (Error: ./components/doc-blocks.tsx:50:7)
+    at <unknown> (Error: (./components/doc-blocks.tsx:50:7)
+[browser] Uncaught Error: ./components/doc-blocks.tsx:50:7
+Expected corresponding JSX closing tag for <Reveal>
+  48 |         }
+  49 |       })}
+> 50 |     </div>
+     |       ^^^
+  51 |   );
+  52 | }
+  53 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/doc-blocks.tsx
+    ./app/docs/[slug]/page.tsx
+
+
+    at <unknown> (Error: ./components/doc-blocks.tsx:50:7)
+    at <unknown> (Error: (./components/doc-blocks.tsx:50:7)
+[browser] Uncaught Error: ./app/docs/page.tsx:55:5
+Expression expected
+  53 |         ))}
+  54 |       </div>
+> 55 |     </div>
+     |     ^
+  56 |   );
+  57 | }
+  58 |
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./app/docs/page.tsx:55:5)
+    at <unknown> (Error: (./app/docs/page.tsx:55:5)
+[browser] Uncaught Error: ./components/doc-blocks.tsx:50:7
+Expected corresponding JSX closing tag for <Reveal>
+  48 |         }
+  49 |       })}
+> 50 |     </div>
+     |       ^^^
+  51 |   );
+  52 | }
+  53 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/doc-blocks.tsx
+    ./app/docs/[slug]/page.tsx
+
+
+    at <unknown> (Error: ./components/doc-blocks.tsx:50:7)
+    at <unknown> (Error: (./components/doc-blocks.tsx:50:7)
+[browser] Uncaught Error: ./components/doc-blocks.tsx:50:7
+Expected corresponding JSX closing tag for <Reveal>
+  48 |         }
+  49 |       })}
+> 50 |     </div>
+     |       ^^^
+  51 |   );
+  52 | }
+  53 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/doc-blocks.tsx
+    ./app/docs/[slug]/page.tsx
+
+
+    at <unknown> (Error: ./components/doc-blocks.tsx:50:7)
+    at <unknown> (Error: (./components/doc-blocks.tsx:50:7)
+[browser] Uncaught Error: ./components/doc-blocks.tsx:50:7
+Expected corresponding JSX closing tag for <Reveal>
+  48 |         }
+  49 |       })}
+> 50 |     </div>
+     |       ^^^
+  51 |   );
+  52 | }
+  53 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/doc-blocks.tsx
+    ./app/docs/[slug]/page.tsx
+
+
+    at <unknown> (Error: ./components/doc-blocks.tsx:50:7)
+    at <unknown> (Error: (./components/doc-blocks.tsx:50:7)
+[browser] Uncaught Error: ./app/news/page.tsx:52:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  50 |     </div>
+  51 |   );
+> 52 | }
+     | ^
+  53 |
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./app/news/page.tsx:52:1)
+    at <unknown> (Error: (./app/news/page.tsx:52:1)
+⨯ ./components/doc-blocks.tsx:50:7
+Expected corresponding JSX closing tag for <Reveal>
+  [90m48 |[0m         }
+  [90m49 |[0m       })}
+[31m[1m>[0m [90m50 |[0m     </div>
+  [90m   |[0m       [31m[1m^^^[0m
+  [90m51 |[0m   );
+  [90m52 |[0m }
+  [90m53 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/doc-blocks.tsx
+    ./app/docs/[slug]/page.tsx
+
+
