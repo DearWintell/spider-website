@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f2f2f2;
+  --foreground: #0a0a0a;
+  --muted: #6f6f6f;
+  --rule: #d6d6d6;
+  --panel: #fbfbfb;
+  --grid-line: rgba(10, 10, 10, 0.05);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-panel: var(--panel);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --muted: #9a9a9a;
+    --rule: #2b2b2b;
+    --panel: #111111;
+    --grid-line: rgba(255, 255, 255, 0.05);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo,
+    monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+  animation: grid-pan 24s linear infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes grid-pan {
+  from {
+    background-position: center center;
+  }
+
+  to {
+    background-position: 40px 40px;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+.news-dot {
+  animation: blink 1.6s ease-in-out infinite;
+}
+
+.news-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.news-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.reveal {
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .news-dot,
+  .bg-grid {
+    animation: none;
+  }
+
+  .reveal {
+    transition: none;
+  }
+
+  .reveal-hidden {
+    opacity: 1;
+    transform: none;
+  }
+}
